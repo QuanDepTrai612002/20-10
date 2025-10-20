@@ -28,7 +28,6 @@ body {
     top: 20px;
     right: 20px;
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
     border-radius: 25px;
     padding: 15px 20px;
     z-index: 1000;
@@ -309,7 +308,6 @@ body {
 /* Main Content */
 .main-content {
     background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(20px);
     border-radius: 30px;
     padding: 50px;
     max-width: 900px;
@@ -425,7 +423,6 @@ body {
     padding: 40px;
     border-radius: 25px;
     border: 2px solid rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(15px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
@@ -448,16 +445,16 @@ body {
 
 .greeting {
     font-size: 2rem;
-    color: #fff;
+    color: #fff; /* solid color for crisp text */
     margin-bottom: 25px;
-    font-weight: 600;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(45deg, #fff, #ffeaa7, #fff);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    animation: greetingGlow 3s ease-in-out infinite;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    /* Remove gradient text to prevent blur */
+    -webkit-text-fill-color: initial;
+    background: none;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    animation: fadeInUp 0.6s ease-out both;
 }
 
 @keyframes greetingGlow {
@@ -468,14 +465,15 @@ body {
 .poem {
     font-family: 'Dancing Script', cursive;
     font-size: 1.6rem;
-    background: linear-gradient(45deg, #fff, #ffeaa7, #fff);
-    background-size: 200% 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #fff; /* solid color for crisp text */
     line-height: 2;
-    animation: poemGlow 4s ease-in-out infinite;
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    /* Remove gradient clip and heavy glow that causes blur */
+    -webkit-text-fill-color: initial;
+    background: none;
+    background-clip: initial;
+    -webkit-background-clip: initial;
+    animation: fadeInUp 0.6s ease-out both;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
 
 @keyframes poemGlow {
@@ -487,6 +485,8 @@ body {
     margin: 10px 0;
     opacity: 0;
     animation: fadeInLine 0.8s ease-out forwards;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .poem-line:nth-child(1) { animation-delay: 1s; }
@@ -514,7 +514,6 @@ body {
     padding: 25px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
     transition: all 0.3s ease;
     cursor: pointer;
 }
@@ -738,7 +737,6 @@ body {
     color: #fff;
     text-decoration: none;
     transition: all 0.3s ease;
-    backdrop-filter: blur(5px);
 }
 
 .social-link:hover {
@@ -1036,7 +1034,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background: linear-gradient(135deg, rgba(255, 105, 180, 0.95), rgba(255, 20, 147, 0.95));
-    backdrop-filter: blur(20px);
     color: white;
     padding: 30px 40px;
     border-radius: 25px;
@@ -1055,12 +1052,10 @@ body {
     0% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.2) rotate(-20deg);
-        filter: blur(10px);
     }
     15% {
         opacity: 1;
         transform: translate(-50%, -50%) scale(1.1) rotate(5deg);
-        filter: blur(0px);
     }
     25% {
         transform: translate(-50%, -50%) scale(1) rotate(0deg);
@@ -1072,7 +1067,6 @@ body {
     100% {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0.8) rotate(10deg);
-        filter: blur(5px);
     }
 }
 
@@ -1151,7 +1145,6 @@ body {
     padding: 30px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     cursor: pointer;
     position: relative;
