@@ -484,11 +484,11 @@ function createFloatingHearts(container) {
 // Show love message
 function showLoveMessage() {
     const messages = [
-        "Chúc chị em luôn hạnh phúc! 💕",
-        "Chị em là những người tuyệt vời! 🌟",
-        "Cảm ơn chị em vì đã ở bên cạnh! 💖",
-        "Chị em làm cuộc sống đẹp hơn! ✨",
-        "Chúc chị em ngày 20/10 thật hạnh phúc! 🎉"
+        "Anh yêu em Lê Bảo Trâm! 💕",
+        "Em là tất cả của anh! 🌟",
+        "Cảm ơn em vì đã ở bên anh! 💖",
+        "Em làm cuộc sống anh đẹp hơn! ✨",
+        "Chúc em ngày 20/10 thật hạnh phúc! 🎉"
     ];
     
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
@@ -640,7 +640,7 @@ function createEnhancedRippleEffect(element) {
 
 function showCardSpecificMessage(cardIndex) {
     const messages = [
-        "Chúc em luôn hạnh phúc và nở nụ cười! 😊",
+        "Chúc em Lê Bảo Trâm luôn hạnh phúc và nở nụ cười! 😊",
         "Mong em đạt được mọi ước mơ! 🌟",
         "Chúc em luôn khỏe mạnh và tràn đầy năng lượng! 💪",
         "Em xứng đáng với mọi điều tốt đẹp nhất! 💖"
@@ -1033,13 +1033,13 @@ function startFallbackMusic() {
 // Enhanced Love Message
 function showEnhancedLoveMessage() {
     const messages = [
-        "Chúc tất cả chị em luôn hạnh phúc! 💕",
-        "Chị em là những người tuyệt vời nhất! 🌟",
-        "Cảm ơn chị em vì đã làm thế giới đẹp hơn! 💖",
-        "Chị em làm cuộc sống trở nên ý nghĩa! ✨",
-        "Chúc chị em ngày 20/10 thật hạnh phúc! 🎉",
-        "Chị em là ánh sáng của thế giới! 💫",
-        "Mỗi ngày với chị em đều là một món quà! 🎁"
+        "Anh yêu em Lê Bảo Trâm vô cùng! 💕",
+        "Em là tất cả của anh! 🌟",
+        "Cảm ơn em vì đã ở bên anh! 💖",
+        "Em làm cuộc sống anh đẹp hơn! ✨",
+        "Chúc em ngày 20/10 thật hạnh phúc! 🎉",
+        "Em là ánh sáng trong tim anh! 💫",
+        "Mỗi ngày với em đều là một món quà! 🎁"
     ];
     
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
@@ -1062,11 +1062,11 @@ function showEnhancedLoveMessage() {
 // Show love message (legacy)
 function showLoveMessage() {
     const messages = [
-        "Chúc chị em luôn hạnh phúc! 💕",
-        "Chị em là những người tuyệt vời! 🌟",
-        "Cảm ơn chị em vì đã ở bên cạnh! 💖",
-        "Chị em làm cuộc sống đẹp hơn! ✨",
-        "Chúc chị em ngày 20/10 thật hạnh phúc! 🎉"
+        "Anh yêu em Lê Bảo Trâm! 💕",
+        "Em là tất cả của anh! 🌟",
+        "Cảm ơn em vì đã ở bên anh! 💖",
+        "Em làm cuộc sống anh đẹp hơn! ✨",
+        "Chúc em ngày 20/10 thật hạnh phúc! 🎉"
     ];
     
     const randomMessage = messages[Math.floor(Math.random() * messages.length)];
@@ -1729,11 +1729,11 @@ function createRainbowSparkles() {
 // Love message surprise
 function createLoveMessage() {
     const messages = [
-        "Chị em là ánh sáng trong cuộc đời! 💫",
-        "Mỗi ngày với chị em đều là một món quà! 🎁",
-        "Chúng ta yêu quý chị em vô cùng! 💕",
-        "Chị em làm trái tim chúng ta nhảy múa! 💃",
-        "Cảm ơn chị em vì đã là chính mình! 🌟"
+        "Em Lê Bảo Trâm là ánh sáng trong cuộc đời anh! 💫",
+        "Mỗi ngày với em đều là một món quà! 🎁",
+        "Anh yêu em vô cùng! 💕",
+        "Em làm trái tim anh nhảy múa! 💃",
+        "Cảm ơn em vì đã là chính em! 🌟"
     ];
     
     const message = messages[Math.floor(Math.random() * messages.length)];
